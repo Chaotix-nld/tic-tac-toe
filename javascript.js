@@ -1,7 +1,6 @@
 let playerOneScore = 0;
 let playerTwoScore = 0;
 let count = 0;
-let running = false;
 const playingField =  document.getElementById("playingField");
 const resetBtn = document.getElementById("resetBtn");
 const playAgainBtn = document.getElementById("playAgainBtn");
@@ -51,7 +50,6 @@ const playerOneName = document.getElementById("playerOneName").value;
 const playerTwoName = document.getElementById("playerTwoName").value;
 displayPlayerOne.innerText = playerOneName;
 displayPlayerTwo.innerText = playerTwoName;
-running = true;
 playingField.removeChild(playerInput);
 createGrid();
 }
@@ -70,6 +68,7 @@ function createGrid(){
 };
 
 function clicked(){
+    
     const clickedCell = document.getElementById(this.id);
     const objectIndex = Number(this.id) - 1;
     const selectedObject = cells[objectIndex]; //determine specific index of object//
