@@ -77,12 +77,14 @@ function clicked(){
     //player turn is based on modulus//
     if(count % 2 == 0){
         clickedCell.textContent = "X"
+        clickedCell.classList.add("X");
         console.log("x")
         clickedCell.removeEventListener("click", clicked);
         selectedObject.value = "X";
     }
     else {
         clickedCell.textContent = "O"
+        clickedCell.classList.add("O")
         console.log("O")
         clickedCell.removeEventListener("click", clicked);
         selectedObject.value = "O";

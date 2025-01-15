@@ -31,7 +31,7 @@ span.headerText{
     font-size: 1.3em;
 }
 footer{
-    margin-bottom: 0px
+    margin-bottom: 0px;
     margin-top: auto;
 }
 
@@ -71,6 +71,12 @@ footer{
     font-size: 4em;
     font-weight: bold;
     cursor: pointer;
+}
+.O{
+    color: #fa4848;
+}
+.X{
+    color: #0004ff
 }
 div.winner{
     z-index: 1;
