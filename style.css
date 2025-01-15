@@ -1,0 +1,135 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header, footer{
+    height: 60px;
+    width: 100vw;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #000268;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+h1{
+    color: white;
+    font-size: 2em;
+    margin: 0;
+}
+span.headerText{
+    color:#0004ff;
+    font-family: monospace;
+    font-size: 1.3em;
+}
+footer{
+    margin-bottom: 0px
+    margin-top: auto;
+}
+
+#mainBody{
+    width:  100vw;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#playingField{
+    background-color: #ebebeb;
+    border-radius: 20px;
+    padding: 20px;
+    width: 600px;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    flex-wrap: wrap;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+}
+.cell{
+    width: 200px;
+    height: 200px;
+    box-sizing: border-box;
+    margin: 0;
+    border-style: solid;
+    border-color: #cccccc;
+    border-width: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4em;
+    font-weight: bold;
+    cursor: pointer;
+}
+div.winner{
+    z-index: 1;
+    font-size: 50px;
+    font-weight: bold;
+    align-self: center;
+    justify-self: center;
+    color: white;
+}
+#bottom{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    margin-top: 20px;
+    box-sizing: border-box;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+#displayPlayerOne, #displayPlayerTwo{
+    font-size: 30px;
+}
+#playerTwoScoreDisplay, #playerOneScoreDisplay{
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+#playerInput{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+button{
+    width: 125px;
+    height: 50px;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 2px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: white;
+}
+label{
+    font-weight: bold;
+    font-size: 20px;
+}
+input{
+    height: 25px;
+    width: 125px;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+}
+
