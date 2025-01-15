@@ -181,6 +181,10 @@ function checkCell(){
             }
         }
     }
+    else if (cells[0, 1, 2, 3, 4, 5, 6,  7, 8].value != " "){
+        declareTie();
+    }
+    
 }
 
 function declareWinnerOne(){
@@ -202,4 +206,12 @@ function declareWinnerTwo(){
     footer.appendChild(winner);
     playerTwoScore ++;
     playerTwoScoreDisplay.textContent = playerTwoScore;
+}
+
+function declareTie(){
+    const winner = document.createElement("div");
+    winner.classList.add("winner");
+    winner.setAttribute("id", "winner");
+    winner.textContent = "Its a Tie";
+    footer.appendChild(winner);
 }
