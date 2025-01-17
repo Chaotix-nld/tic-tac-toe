@@ -95,97 +95,104 @@ function clicked(){
 //checking for winner//
 function checkCell(){
     //row 1//
-    if (cells[0].value === cells[1].value && cells[1].value === cells[2].value){
-        if (cells[0].value != " "){
+    if (
+        (cells[0].value === cells[1].value && cells[0].value != " ") 
+        && (cells[1].value === cells[2].value && cells[1].value != " ")
+        ){
             if (cells[0].value === "X"){
                 declareWinnerOne()
             }
             else if(cells[0].value === "O"){
                 declareWinnerTwo();
             }
-        }
     }
     //row 2//
-    else if (cells[3].value === cells[4].value && cells[4].value === cells[5].value){
-        if (cells[3].value != " "){
+    else if (
+        (cells[3].value === cells[4].value && cells[3].value != " ") 
+        && (cells[4].value === cells[5].value && cells[4].value != " ")
+        ){
             if (cells[3].value === "X"){
                 declareWinnerOne();
             }
             else if(cells[3].value === "O"){
                 declareWinnerTwo();
             }
-        }
     }
     //row 3//
-    else if (cells[6].value === cells[7].value && cells[7].value === cells[8].value){
-        if (cells[6].value != " "){
+    else if (
+        (cells[6].value === cells[7].value && cells[6].value != " ") 
+        && (cells[7].value === cells[8].value && cells[7].value != " ")
+        ){
             if (cells[6].value === "X"){
                 declareWinnerOne();
             }
             else if(cells[6].value === "O"){
                 declareWinnerTwo();
             }
-        }
     }
     //column 1//
-    else if (cells[0].value === cells[3].value && cells[3].value === cells[6].value){
-        if (cells[0].value != " "){
+    else if (
+        (cells[0].value === cells[3].value && cells[0].value != " ") 
+        && (cells[3].value === cells[6].value && cells[3].value != " ")
+        ){
             if (cells[0].value === "X"){
                 declareWinnerOne();
             }
             else if(cells[0].value === "O"){
                 declareWinnerTwo();
             }
-        }
     }
     //column 2//
-    else if (cells[1].value === cells[4].value && cells[4].value === cells[7].value){
-        if (cells[1].value != " "){
+    else if (
+        (cells[1].value === cells[4].value && cells[1].value != " ") 
+        && (cells[4].value === cells[7].value && cells[4].value != " ")
+        ){
             if (cells[1].value === "X"){
                 declareWinnerOne();
             }
             else if(cells[1].value === "O"){
                 declareWinnerTwo();
             }
-        }
     }
     //column 3//
-    else if (cells[2].value === cells[5].value && cells[5].value === cells[8].value){
-        if (cells[2].value != " "){
+    else if (
+        (cells[2].value === cells[5].value && cells[2].value != " ") 
+        && (cells[5].value === cells[8].value && cells[5].value != " ")
+        ){
             if (cells[2].value === "X"){
                 declareWinnerOne();
             }
             else if(cells[2].value === "O"){
                 declareWinnerTwo();
             }
-        }
     }
     //diagonal 1//
-    else if (cells[0].value === cells[4].value && cells[4].value === cells[8].value){
-        if (cells[0].value != " "){
+    else if (
+        (cells[0].value === cells[4].value && cells[0].value != " ") 
+        && (cells[4].value === cells[8].value && cells[4].value != " ")
+        ){
             if (cells[0].value === "X"){
                 declareWinnerOne();
             }
             else if(cells[0].value === "O"){
                 declareWinnerTwo();
             }
-        }
     }
     //diagonal 2//
-    else if (cells[2].value === cells[4].value && cells[4].value === cells[6].value){
-        if (cells[2].value != " "){
+    else if (
+        (cells[2].value === cells[4].value && cells[2].value != " ") 
+        && (cells[4].value === cells[6].value && cells[4].value != " ")
+        ){
             if (cells[2].value === "X"){
                 declareWinnerOne();
             }
             else if(cells[2].value === "O"){
                 declareWinnerTwo();
             }
-        }
     }
     else if (cells[0, 1, 2, 3, 4, 5, 6,  7, 8].value != " "){
         declareTie();
     }
-    
 }
 
 function declareWinnerOne(){
